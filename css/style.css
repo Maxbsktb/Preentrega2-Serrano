@@ -126,3 +126,48 @@ body{
     background: rgba(168, 167, 167, 0.3);
 }
 
+.socialtitle{
+    display: flex;
+    align-items: left;
+    text-align: center;
+    justify-content: start;
+    background: rgba(168, 167, 167, 0.3);
+    margin-left: 20px;
+
+
+}
+
+.mediaicon{
+    margin: 10px;
+}
+
+.socialmedia{
+    width: 100%;
+    display: list-item;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+
+.socialmedia div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-evenly;
+    text-align: left;
+
+    }
+    
+    .submitbotom{
+        display: flex;
+        align-items: right;
+        justify-content: end;
+        
+        
+    }
+
+    
+    /*Comenzando productos/*
+    
