@@ -1,0 +1,128 @@
+body{
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 1em black, 0 0 0.2em black;
+    background-image: url("../img/carniceria.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1;
+    
+}
+
+
+
+
+/* HEADER */
+.header-banner{
+    /* background-image: url("./img/bannerpic.jpg"); */
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    /* background-size: cover; */
+    background: rgba(168, 167, 167, 0.3);
+   
+}
+
+.navigation{
+    margin-top: 20px;
+}
+.navigation img{
+    filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.search{
+    margin-left: 15px;
+}
+
+.header-title{
+    margin-left: 10px;
+}
+
+
+.principal{
+    margin-left: 30px;
+    font-size: 60px;
+    
+}
+
+.description{
+    font-size: 25px;
+}
+/* MAIN */
+.main-meat{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 30px 0;
+    background: rgba(168, 167, 167, 0.3);
+}
+
+.ubication-div{
+    width: 33%;
+
+}
+
+.identity-div{
+    width: 33%;
+    
+}
+
+/* SECTION */
+
+.title-h3{
+    text-align: center;
+    font-size: 40px;
+    margin: 45px 0;
+   
+}
+
+.recomended{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(168, 167, 167, 0.3);
+
+}
+
+
+.recomended div{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img-section{
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+   
+}
+
+.footest{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    background: rgba(168, 167, 167, 0.3);
+    margin-top: 30px;
+}
+
+.footest img{
+    filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+/* contacto css */
+/* MAIN contact */
+.main-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 30px 0;
+    background: rgba(168, 167, 167, 0.3);
+}
+
