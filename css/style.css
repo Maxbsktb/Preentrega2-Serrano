@@ -1,4 +1,17 @@
+/*Global setting*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+
 body{
+    /* margin: 0 auto;
+    max-width: 1200px; */
     color: white;
     text-shadow: 1px 1px 2px red, 0 0 1em black, 0 0 0.2em black;
     background-image: url("../img/carniceria.jpg");
@@ -6,6 +19,10 @@ body{
     background-attachment: fixed;
     opacity: 1;
     
+}
+
+.img{
+    max-width: 100%;
 }
 
 
@@ -169,5 +186,69 @@ body{
     }
 
     
+    
+    
+    
     /*Comenzando productos/*
     
+    /* Main body*/
+
+    .container-item{
+        display: grid;
+        grid-template-columns:(3, 1fr);
+        gap: 20px;
+    }
+
+    .item{
+        border-radius: 10px;
+
+    }
+
+    .item:hover{
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    }
+
+   
+
+    .item img{
+        width: 20%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+        transition: all .5s;
+    }
+
+    .item figure{
+        overflow: hidden;
+    }
+
+
+    .item:hover img{
+        transform: scale(1.2);
+    }
+
+
+    .info-product{
+        padding: 15px 30px;
+        line-height: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .price{
+        font-size: 18px;
+        font-weight: 900;
+
+    }
+
+    .info-product button{
+        border: none;
+        background: none;
+        background-color: black;
+        color: #fff;
+        padding: 15px 10px;
+        cursor: pointer;
+        
+
+    }
