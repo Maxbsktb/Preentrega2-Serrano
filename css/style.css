@@ -235,6 +235,8 @@ body{
     background: rgba(168, 167, 167, 0.3);
 }
 
+
+
 .bg-title{
     background: rgba(168, 167, 167, 0.3);
 
@@ -282,13 +284,40 @@ body{
     }
     
     .submitbotom{
+        /* background-color: aqua; */
         display: flex;
-        align-items: right;
-        justify-content: end;
+        align-items: end !important;
+        justify-content: space-around !important;
         
-        
+        }
+
+    .submitbotom input:hover{
+        width: 60px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: all .5s;
+
     }
 
+    form{
+        /* background-color: red; */
+        width: 600px;
+        height: 300px;
+        padding: 10px;
+    }
+
+    .form-imput{
+        /* background-color: blue; */
+        padding: 10px;
+        width: 100%;
+        display: flex !important; 
+        justify-content: space-between !important; 
+    }
+
+    .form-imput input{
+        width: 50%;
+    }
     
     
     
