@@ -14,16 +14,19 @@ body{
     max-width: 1200px; */
     color: white;
     text-shadow: 1px 1px 2px red, 0 0 1em black, 0 0 0.2em black;
-    background-image: url("../img/carniceria.jpg");
+    background: url("../img/carniceria.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     opacity: 1;
+    
     
 }
 
 .img{
     max-width: 100%;
 }
+
+
 
 
 
@@ -38,6 +41,8 @@ body{
     background: rgba(168, 167, 167, 0.3);
    
 }
+
+
 
 .navigation{
     margin-top: 20px;
@@ -398,4 +403,8 @@ body{
         }
         
     }
+
+    /*Inicio recomendaciones/*
+    
+    
     
