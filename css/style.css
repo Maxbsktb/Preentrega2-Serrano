@@ -10,8 +10,7 @@
 /* Index*/
 
 body{
-    /* margin: 0 auto;
-    max-width: 1200px; */
+    
     color: white;
     text-shadow: 1px 1px 2px red, 0 0 1em black, 0 0 0.2em black;
     background: url("../img/carniceria.jpg");
@@ -38,7 +37,7 @@ body{
     align-items: start;
     justify-content: space-between; 
     /* background-size: cover; */
-    background: rgba(168, 167, 167, 0.3);
+    background: rgba(0, 0, 0, 0.479);
    
 }
 
@@ -168,7 +167,7 @@ body{
     justify-content: space-evenly;
     text-align: center;
     margin: 30px 0;
-    background: rgba(168, 167, 167, 0.3);
+    background: rgba(10, 10, 10, 0.39);
 }
 
 .ubication-div{
@@ -187,6 +186,7 @@ body{
     text-align: center;
     font-size: 40px;
     margin: 45px 0;
+    color: #000000;
    
 }
 
@@ -194,7 +194,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background: rgba(168, 167, 167, 0.3);
+    background: rgba(10, 10, 10, 0.349);
 
 }
 
@@ -219,7 +219,7 @@ body{
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
-    background: rgba(168, 167, 167, 0.3);
+    background: rgba(10, 10, 10, 0.349);
     margin-top: 30px;
 }
 
@@ -237,13 +237,13 @@ body{
     justify-content: space-evenly;
     text-align: center;
     margin: 30px 0;
-    background: rgba(168, 167, 167, 0.3);
+    background: rgba(10, 10, 10, 0.3);
 }
 
 
 
 .bg-title{
-    background: rgba(168, 167, 167, 0.3);
+    background: rgba(10, 10, 10, 0.3);
 
 }
 
@@ -267,7 +267,7 @@ body{
     flex-direction: row;
     align-items: center;
     text-align: center;
-    background: rgba(168, 167, 167, 0.3);
+    background: rgba(10, 10, 10, 0.3);
     margin: 20px 0;
 }
 
@@ -404,7 +404,79 @@ body{
         
     }
 
-    /*Inicio recomendaciones/*
+    /*Inicio recomendaciones*/
+
+    .our-recomendation{
+        width: 100%;
+        display: flex;
+        max-width: 1850px;
+        display: grid !important;
+        grid-template-columns: auto auto auto auto;
+        gap: 20px;
+    }
+
+    .card{
+        width: 100%;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #000000a2;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+        cursor: default;
+        transition: all 400ms ease;
+        
+    }
+
+    .card:hover{
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.6);
+        transform: translateY(-3%);
+
+    }
+
+    .card img{
+        width: 100%;
+        height: 210px;
+
+    }
+
+    .card-container{
+        padding: 15px;
+        text-align: center;
+
+    }
+
+    .card-container p{
+        line-height: 1.5;
+        color: #6a6a6a;
     
-    
-    
+    }
+    .card-container h3{
+        font-weight: 10px;
+        margin-bottom: 15px;
+
+    }
+
+    .card-container a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        color: #cc2f2f;
+        border: 1px solid #cc2f63;
+        border-radius: 6px;
+        transition: all 400ms ease;
+
+
+    }
+    .card-container a:hover{
+        background: #cc2f2f;
+        color: #fff;
+
+    }
+
+    @media screen and (max-width: 1000px) {
+        .our-recomendation{
+            grid-template-columns: auto auto;
+        }
+        
+    }
