@@ -254,6 +254,8 @@ body{
 
 .mediaicon{
   margin: 10px;
+ 
+  
 }
 
 .socialmedia{
@@ -262,7 +264,7 @@ body{
   flex-direction: row;
   align-items: center;
   text-align: center;
-  background: rgba(10, 10, 10, 0.3);
+  background: rgba(0, 0, 0, 0.404);
   margin: 20px 0;
 }
 
@@ -468,6 +470,24 @@ body{
       background: #cc2f2f;
       color: #fff;
 
+  }
+
+  .recom-text{
+    background: #000000a2;
+    text-align: center;
+    line-height: 1.6;
+    
+  }
+
+  .recom-text p{
+    color: #fff;
+  }
+
+  .recom-text a{
+    color: #fff;
+    
+
+    
   }
 
   @media screen and (max-width: 1000px) {
