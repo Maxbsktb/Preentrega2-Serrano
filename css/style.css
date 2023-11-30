@@ -151,10 +151,12 @@ body {
   padding: 0px 100px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .main-meat {
     grid-template-columns: auto;
     font-size: 12px;
+    margin: 0px;
+    padding: 5px;
   }
 }
 .main-meat p {
@@ -175,10 +177,32 @@ body {
   font-size: 16px;
 }
 
+@media screen and (max-width: 800px) {
+  .ubication-div {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .ubication-div {
+    width: 100%;
+    font-size: 12px;
+  }
+}
 .identity-div {
   width: 33%;
 }
 
+@media screen and (max-width: 800px) {
+  .identity-div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .identity-div {
+    width: 100%;
+  }
+}
 /* SECTION */
 .title-h3 {
   text-align: center;

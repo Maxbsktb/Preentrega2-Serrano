@@ -3,6 +3,9 @@
   grid-template-columns: #{$values}
 
  }
+
+
+
  }
 
  .container-item{
@@ -21,6 +24,12 @@
 }
 
 
+
+// .main-meat{
+//   @include medContainerItem(1000px,auto auto auto );
+//   @include medContainerItem(800px,auto auto );
+//   @include medContainerItem(400px,auto );
+// }
 
 
 //  @media screen and (max-width: 1000px) {
