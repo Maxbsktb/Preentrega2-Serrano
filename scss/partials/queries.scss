@@ -1,0 +1,76 @@
+@mixin medContainerItem($mediaQuerySize,$values) {
+  @media (max-width: #{$mediaQuerySize}) {
+  grid-template-columns: #{$values}
+
+ }
+ }
+
+ .container-item{
+  @include medContainerItem(1000px,auto auto );
+  @include medContainerItem(400px,auto );
+ }
+
+
+
+
+.our-recomendation{
+  @include medContainerItem(1000px, auto auto auto );
+  @include medContainerItem(800px, auto auto );
+  @include medContainerItem(550px, auto );
+
+}
+
+
+
+
+//  @media screen and (max-width: 1000px) {
+//   .container-item{
+//       grid-template-columns: auto auto;
+//   }
+  
+// }
+
+
+//  @media screen and (max-width: 400px) {
+//   .container-item{
+//       grid-template-columns: auto;
+//   }
+  
+// }
+
+// @media screen and (max-width: 1000px) {
+//     .our-recomendation {
+//       grid-template-columns: auto auto auto;
+//     }
+//   }
+
+// @media screen and (max-width: 800px) {
+//   .our-recomendation {
+//     grid-template-columns: auto auto;
+//   }
+// }
+
+// @media screen and (max-width: 360px) {
+//   .our-recomendation{
+//     grid-template-columns: auto;
+//   }
+  
+// }
+
+
+
+
+
+  // @media screen and (max-width: 1000px) {
+  //       .our-recomendation{
+  //           grid-template-columns: auto auto;
+  //       }
+        
+  //   }
+
+    
+  //   @media screen and (max-width: 360px) {
+  //       .our-recomendation{
+  //           grid-template-columns: auto;
+  //       }
+  //   }

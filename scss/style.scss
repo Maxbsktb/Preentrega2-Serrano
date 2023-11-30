@@ -1,3 +1,7 @@
+
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -19,6 +23,8 @@ body{
 .img{
     max-width: 100%;
 }
+
+
 
 
 
@@ -157,18 +163,53 @@ body{
 }
 /* MAIN */
 .main-meat{
-    display: flex;
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    margin: 30px 0;
     background: rgba(10, 10, 10, 0.39);
+    text-align: center;
+    padding: 0px 100px;
+   
+
 }
+
+@media screen and (max-width: 400px) {
+        .main-meat{
+           grid-template-columns: auto;
+           font-size: 12px;
+        }
+        
+    }
+
+    .main-meat p{
+        width: 400px;
+        
+    }
 
 .ubication-div{
     width: 33%;
 
 }
+
+.ubication-title{ 
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.ubication-div p{
+    font-size: 16px;
+
+}
+
+
+    
+
+
+
 
 .identity-div{
     width: 33%;
@@ -192,6 +233,31 @@ body{
     background: rgba(10, 10, 10, 0.349);
 
 }
+// @media screen and (max-width: 1000px) {
+//     .recomended{
+//         flex-direction: column column column;
+//     }
+    
+// }
+
+// @media screen and (max-width: 600px) {
+//     .recomended{
+//         flex-direction: column column;
+//     }
+    
+// }
+
+@media screen and (max-width: 400px) {
+    .recomended{
+        flex-direction: column;
+        
+    }
+    
+}
+
+
+
+
 
 
 .recomended div{
@@ -201,6 +267,9 @@ body{
     align-items: center;
     text-align: center;
 }
+
+
+
 
 .img-section{
     width: 200px;
@@ -234,6 +303,8 @@ body{
     margin: 30px 0;
     background: rgba(10, 10, 10, 0.3);
 }
+
+
 
 
 
@@ -392,12 +463,12 @@ body{
 
     }
 
-    @media screen and (max-width: 800px) {
-        .container-item{
-            grid-template-columns: auto auto;
-        }
+    // @media screen and (max-width: 800px) {
+    //     .container-item{
+    //         grid-template-columns: auto auto;
+    //     }
         
-    }
+    // }
 
     /*Inicio recomendaciones*/
 
@@ -469,12 +540,18 @@ body{
 
     }
 
-    @media screen and (max-width: 1000px) {
-        .our-recomendation{
-            grid-template-columns: auto auto;
-        }
+    // @media screen and (max-width: 1000px) {
+    //     .our-recomendation{
+    //         grid-template-columns: auto auto;
+    //     }
         
-    }
+    // }
 
-    @import '../scss/partials/queries'
     
+    // @media screen and (max-width: 360px) {
+    //     .our-recomendation{
+    //         grid-template-columns: auto;
+    //     }
+    // }
+
+    @import 'partials/queries.scss';
