@@ -478,6 +478,52 @@ form {
     font-size: 14px;
   }
 }
+.body-error {
+  background-image: none;
+  background-color: rgb(40, 54, 63);
+  color: black;
+  text-shadow: none;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.error-container img {
+  width: 50%;
+}
+
+.error-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-container h1 {
+  color: #cecece;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.body-error button {
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: none;
+  background: rgb(67, 195, 255);
+  color: white;
+}
+
+.body-error button:hover {
+  background: rgb(31, 83, 107);
+}
+
+@media screen and (max-width: 600px) {
+  .error-container h1 {
+    font-size: 16px;
+  }
+}
 @media (max-width: 1000px) {
   .container-item {
     grid-template-columns: auto auto;
