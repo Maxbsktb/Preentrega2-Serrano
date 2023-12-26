@@ -1,5 +1,12 @@
 
-
+:root {
+    --color_primario: #ff002bfd;
+    --color_primario_suave: #e66e6e83;
+    --color_blanco: #fff;
+    --altura_header: 80px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+}
 
 
 *{
@@ -12,7 +19,7 @@ body{
     
     color: white;
     text-shadow: 1px 1px 2px red, 0 0 1em black, 0 0 0.2em black;
-    background: url("../img/carniceria.jpg");
+    background: url("../img/carnicerias.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     opacity: 1;
@@ -24,6 +31,14 @@ body{
     max-width: 100%;
 }
 
+a{
+    text-decoration: none;
+}
+
+ol,ul{
+    list-style: none;
+}
+
 
 
 
@@ -32,124 +47,97 @@ body{
 
 
 /* HEADER */
-.header-banner{
-    /* background-image: url("./img/bannerpic.jpg"); */
-    display: flex;
-    align-items: start;
-    justify-content: space-between; 
-    /* background-size: cover; */
-    background: rgba(0, 0, 0, 0.479);
-   
+
+
+.header {
+    height: var(--altura_header);
+    background-color: var(--color_primario);
+
 }
 
-
-
-.navigation{
-    margin-top: 20px;
-}
-
-.navigation a:link{
-    color: white;
-    text-shadow: 1px 1px 2px red, 0 0 1em black, 0 0 0.2em black;
-}
-
-.navigation a:visited{
-    color: bisque;
-    text-shadow: 1px 1px 2px red, 0 0 1em black, 0 0 0.2em black;
-}
-
-.navigation a:hover{
-    color: darkgreen;
-    text-shadow: 1px 1px 2px red, 0 0 1em black, 0 0 0.2em black;
-}
-
-.navigation a:active{
-    color: darkblue;
-    text-shadow: 1px 1px 2px red, 0 0 1em black, 0 0 0.2em black;
-}
-
-.navigation img{
-    filter: invert(100%);
-  -webkit-filter: invert(100%);
-}
-.navigation a{
-    padding: 0 10px;
-}
-
-.search{
-    margin-left: 15px;
-}
-
-.header-title{
-    margin-left: 10px;
-}
-
-.navigation {
-    /* background-color: #333; */
-    padding: 15px;
-    color: white;
+.navbar {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 var(--padding_left_right);
 }
 
-.nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.nav-list nav-bar {
-    margin-left: 20px;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.menu-icon {
-    cursor: pointer;
+.menu-burger{
     display: none;
+
+}
+.menu-burger:checked + .ul_links{
+    height: calc(100vh - var(--altura_header))
+
 }
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
+
+.logo {
+    color: var(--color_blanco);
+}
+.label_burger {
 }
 
-@media screen and (max-width: 800px) {
-    .menu-icon {
-        display: block;
-    }
 
-    .nav-list {
+.list_icon {
+    color: var(--color_blanco);
+    cursor: pointer;
+}
+.ul_links {
+    width: 100%;
+    background-color: var(--color_primario_suave);
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    // height: calc(100vh - var(--altura_header));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    transition: all .3s;
+
+}
+.li_links {
+}
+.link {
+    font-size: 2rem;
+    color: var(--color_blanco);
+    font-weight: bold;
+
+}
+
+@media screen and (min-width: 1100px){
+    .label_burger{
         display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        /* background-color: #333; */
+    }
+    .ul_links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .link{
+        font-size: 1.2rem;
+        transition: all .3s;
+        padding: .2rem .7rem;
+
     }
 
-    .nav-list.show {
-        display: flex;
-    }
-
-    .nav-list nav-bar {
-        margin: 0;
-        text-align: center;
-    }
-
-    .menu-icon:hover + .nav-list {
-        display: flex;
+    .link:hover{
+        background-color: #cc2f2f;
+        
     }
 }
+
+
 
 
 .principal{
@@ -258,8 +246,14 @@ body{
     text-align: center;
     font-size: 40px;
     margin: 45px 0;
-    color: #000000;
+    color: #ffffff;
    
+}
+
+@media screen and (max-width: 800px){
+    .title-h3{
+        font-size: 20px;
+    }
 }
 
 .recomended{
@@ -321,12 +315,34 @@ body{
     justify-content: space-evenly;
     background: rgba(10, 10, 10, 0.349);
     margin-top: 30px;
+    
 }
+@media screen and (max-width: 800px) {
+    .footest{
+        display: grid;
+        flex-direction: column column;
+        
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .footest{
+        display: grid;
+        flex-direction: column;
+        
+    }
+    
+}
+
+
 
 .footest img{
     filter: invert(100%);
   -webkit-filter: invert(100%);
 }
+
+
 
 /* contacto css */
 /* MAIN contact */
@@ -549,13 +565,15 @@ body{
 
     .card-container p{
         line-height: 1.5;
-        color: #919191;
+        color: #ffffff;
         
     
     }
     .card-container h3{
         font-weight: 10px;
         margin-bottom: 15px;
+        color: #fff;
+        
 
     }
 
@@ -581,7 +599,7 @@ body{
         width: 100%;
         height: 100%;
         margin: 20px;
-        border: 1px solid;
+      
         background: rgba(10, 10, 10, 0.3);
         display: flex;
         align-items: center;
